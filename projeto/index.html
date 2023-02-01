@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="ovni icon"
+      href="icone/Chanut-Outer-Space-UFO.512.png"
+      type="image/x-icon"
+    />
+    <title>Decodificador</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="menu-nav">Encripitador</h1>
+    </header>
+
+    <main>
+      <section class="texto">
+        <textarea
+          class="text-area"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu texto"
+        ></textarea>
+
+        <div>
+          <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
+        </div>
+        <div class="botoes">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+        </div>
+      </section>
+      <section class="section-container">
+        <textarea id="mensagem" class="mensagem" cols="20" rows="10"></textarea>
+        <button class="btn-desencriptar" onclick="btnDesencriptar()">
+          Descriptografar
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
