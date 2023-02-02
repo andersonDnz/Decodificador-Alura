@@ -7,19 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="ovni icon"
-      href="icone/Chanut-Outer-Space-UFO.512.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="icone/logo-alura.jpeg" type="image/x-icon">
     <title>Decodificador</title>
   </head>
 
   <body>
+    <div></div>
     <header>
-      <h1 class="menu-nav">Encripitador</h1>
+      <h1>Encripitador</h1>
     </header>
-
     <main>
       <section class="texto">
         <textarea
@@ -28,9 +24,8 @@
           rows="4"
           placeholder="Digite seu texto"
         ></textarea>
-
         <div>
-          <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
+          <h6 class="informacao"></h6>
         </div>
         <div class="botoes">
           <button class="btn-encriptar" onclick="btnEncriptar()">
@@ -39,10 +34,12 @@
         </div>
       </section>
       <section class="section-container">
-        <textarea id="mensagem" class="mensagem" cols="20" rows="10"></textarea>
-        <button class="btn-desencriptar" onclick="btnDesencriptar()">
-          Descriptografar
-        </button>
+        <textarea id="mensagem" class="mensagem" cols="41" rows="4"> </textarea>
+        <div class="botoes">
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
       </section>
     </main>
     <script src="script.js"></script>
