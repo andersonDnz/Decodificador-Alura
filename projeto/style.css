@@ -3,7 +3,12 @@
   margin: 0;
 }
 
+body {
+  background-color: #161623;
+}
+
 header {
+  background-color: #1a1a1a;
   padding: 20px;
   display: flex;
   font-family: "Inter", sans-serif;
@@ -13,6 +18,7 @@ header {
 }
 
 header > h1 {
+  color: white;
   text-align: center;
   align-items: center;
   display: flex;
@@ -28,6 +34,7 @@ main {
 }
 
 section {
+  background-color: white;
   display: flex;
   align-items: center;
 }
@@ -49,7 +56,6 @@ section {
 textarea {
   margin-bottom: 1rem;
   width: 200px;
-
   border-radius: 8px;
   text-align: center;
   outline: none;
@@ -77,6 +83,7 @@ button {
 
 button:hover {
   background-image: linear-gradient(to right, #251a67, #1a429f, #3341d8);
+  transition: 1s;
 }
 
 @media (min-width: 700px) {
@@ -89,6 +96,12 @@ button:hover {
     margin-top: 5rem;
   }
 
+  section {
+    border-radius: 12px;
+    width: 350px;
+    height: 310px;
+    border: solid rgb(183, 183, 245);
+  }
   .texto {
     margin: 1px;
     padding: 1rem;
@@ -102,7 +115,7 @@ button:hover {
   textarea {
     width: 250px;
     height: 400px;
-    margin-right: 65px;
+    display: flex;
     text-align: center;
     flex-direction: initial;
   }
@@ -119,11 +132,11 @@ button:hover {
   }
 
   .btn-encriptar {
-    margin-right: 85px;
+    margin-right: 12px;
   }
 
   .btn-desencriptar {
-    margin-right: 70px;
-    width: 150px;
+    margin-right: 12px;
+    
   }
 }
